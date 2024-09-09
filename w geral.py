@@ -84,4 +84,5 @@ for estado in sorted([key for key in resultado.keys()]):
     for char in estado:
         if char == '1': print('\033[91m' + char + '\033[0m', end='')
         else : print(char, end='')
-    print('')
+    print('\033[90m' + ' : ' , end="")
+    print(str(resultado[estado]) + '\033[0m')
